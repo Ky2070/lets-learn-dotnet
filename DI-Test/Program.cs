@@ -31,26 +31,26 @@ namespace DI_Test
             obj = service.GetService<IMyTransientService>();
             obj = service.GetService<IMyTransientService>();
 
-            Console.WriteLine();
-            Console.WriteLine("--- Add new scope ---");
-            Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine("--- Add new scope ---");
+            //Console.WriteLine();
 
-            var scope = service.CreateScope();
+            //var scope = service.CreateScope();
 
-            Console.WriteLine("Get singleton service");
-            obj = scope.ServiceProvider.GetService<IMySingletonService>();
-            obj = scope.ServiceProvider.GetService<IMySingletonService>();
-            obj = scope.ServiceProvider.GetService<IMySingletonService>();
+            //Console.WriteLine("Get singleton service");
+            //obj = scope.ServiceProvider.GetService<IMySingletonService>();
+            //obj = scope.ServiceProvider.GetService<IMySingletonService>();
+            //obj = scope.ServiceProvider.GetService<IMySingletonService>();
 
-            Console.WriteLine("Get scoped service");
-            obj = scope.ServiceProvider.GetService<IMyScopedService>();
-            obj = scope.ServiceProvider.GetService<IMyScopedService>();
-            obj = scope.ServiceProvider.GetService<IMyScopedService>();
+            //Console.WriteLine("Get scoped service");
+            //obj = scope.ServiceProvider.GetService<IMyScopedService>();
+            //obj = scope.ServiceProvider.GetService<IMyScopedService>();
+            //obj = scope.ServiceProvider.GetService<IMyScopedService>();
 
-            Console.WriteLine("Get transient service");
-            obj = scope.ServiceProvider.GetService<IMyTransientService>();
-            obj = scope.ServiceProvider.GetService<IMyTransientService>();
-            obj = scope.ServiceProvider.GetService<IMyTransientService>();
+            //Console.WriteLine("Get transient service");
+            //obj = scope.ServiceProvider.GetService<IMyTransientService>();
+            //obj = scope.ServiceProvider.GetService<IMyTransientService>();
+            //obj = scope.ServiceProvider.GetService<IMyTransientService>();
         }
     }
 }
